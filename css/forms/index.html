@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7nyYZ1hF2G2gObsHXJDUYo_PBmHdGuq_Jfy4xZseiTG_FNTxRZHl_tqQ2CBIxebx_w6M&usqp=CAU');
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: contain;
+            
+        }
+
+        .layer{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0,0, 0, 0.7);
+            padding-top: 100px;
+        }
+
+        
+        #container{
+            height: 400px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 30px;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(255,255, 255, 1);
+            box-shadow: 2px 2px 20px black ;
+            padding-top: 50px;
+        }
+
+
+        .box{
+            margin: 15px;
+            
+        }
+
+
+
+        .box>input{
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .btn{
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="layer">
+
+    <div id="container">
+        <div>
+            <h1>Sign-up form</h1>
+        </div>
+        <div class="box">
+            <input type="text" placeholder="name">
+        </div>
+        <div class="box">
+            <input type="text" placeholder="email">
+        </div>
+        <div class="box">
+            <input type="text" placeholder="password">
+        </div>
+        <div class="box">
+            <input class="btn" type="submit" >
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
