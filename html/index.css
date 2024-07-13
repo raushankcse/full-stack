@@ -1,0 +1,14 @@
+#container{
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+#secondcontainer{
+    font-weight: bold;
+    line-height: 10px;
+}

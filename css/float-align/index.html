@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaot and Alignment</title>
+
+    <style>
+        #container{
+            border: 2px solid red;
+            margin: 2px;
+        }
+
+        .item{
+            border: 1px solid black;
+            margin: 3px;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            padding: 12px;
+            
+        }
+
+        #first{
+            float: left;
+            width: 48%;
+        }
+        
+        #second{
+            float: left;
+            width: 48%;
+        }
+
+        #third{
+            clear: left;
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="first">
+            <h1>First</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, distinctio?</p>
+        </div>
+        <div class="item" id="second">
+            <h1>Second</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, sequi!</p>
+        </div>
+        <div class="item" id="third">
+            <h1>Third</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
