@@ -54,8 +54,6 @@ p{
     grid-column: span 2;
 }
 
-.three{
-}
 
 .four{
     grid-row: span 2;
@@ -66,9 +64,7 @@ p{
     grid-column: span 2;
 }
 
-.six{
 
-}
 
 .seven{
     grid-column: span 2;
