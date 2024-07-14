@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #container{
+            background-color: yellow;
+        }
+
+        .box{
+            background-color: orange;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            position: relative;
+            animation: devtown 10s ease-in-out 0s 1 alternate backwards;
+
+        }
+
+        @keyframes devtown {
+            0%{
+                top: 0px;
+                left: 0px;
+
+            } 
+                       
+            25%{  
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">      
+
+        </div>
+    </div>
+</body>
+</html>

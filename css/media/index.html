@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        #container{
+            background-color: bisque;
+        }
+        #box{
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            .three{
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+            }
+            .one, .two{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 880px) and (min-width: 481px) {
+            .two{
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+            }
+
+            .one, .three{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 881px) {
+            .one{
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+            }
+
+            .two, .three{
+                display: none;
+            }
+
+            #navbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box" class="one"> I am desktop screen</div>
+        <div id="box" class="two"> I am i-pad screen</div>
+        <div id="box" class="three">I am mobile screen</div>
+    </div>
+
+    <div id="navbar">
+        <div>Home</div>
+        <div>Contact us</div>
+        <div>Login</div>
+    </div>
+</body>
+</html>
