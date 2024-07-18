@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Selector</title>
+    <style>
+        :target{
+            border: 1px solid red;
+        }
+        .tab div{
+            display: none;
+        }
+
+        .tab div:target{
+            border: 1px solid red;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <a href="#one">One</a>
+        <a href="#two">Two</a>
+        <div id="one">
+            <h1>One</h1>
+        </div>
+        <div id="two">
+            <h1>Two</h1>
+        </div>
+    </div>
+</body>
+</html>

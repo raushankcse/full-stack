@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template area</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-areas:
+                "navbar navbar"
+                "hero sidebar"
+                "footer footer"
+            ;
+        }
+
+        .box{
+            padding: 2px;
+            background-color: bisque;
+            border: 1px solid black;
+        }
+
+        #navbar{
+            grid-area: navbar;
+            background-color: antiquewhite;
+        }
+
+        #hero{
+            grid-area:hero;
+            background-color: yellow;
+            height: 200px;
+        }
+
+        #sidebar{
+            grid-area: sidebar;
+            background-color: aquamarine;
+        }
+
+        #footer{
+            grid-area: footer;
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">Home About-us Product</div>
+        <div id="hero">Banner</div>
+        <div id="sidebar">Side</div>
+        <div id="footer">Footer Footer</div>
+    </div>
+</body>
+</html>
